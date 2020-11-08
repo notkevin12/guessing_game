@@ -6,7 +6,7 @@ var feedback = document.getElementById('feedback');
 var answer = Math.floor((Math.random() * 101));
 var guesses = 10;
 inputField.value = null;
-console.log("Initial rand value " + answer);
+//console.log("Initial rand value " + answer);
 
 function updateGuesses() {
     guessCT.innerHTML = "Guesses left: " + guesses;
@@ -17,7 +17,7 @@ function reset() {
     answer = Math.floor((Math.random() * 101));
     guesses = 10;
     updateGuesses();
-    console.log("New rand num = " + answer);
+    //console.log("New rand num = " + answer);
 }
 
 function resetGame() {
@@ -48,8 +48,6 @@ function checkInput(string) {
 }
 
 function verifyGuess() {
-    console.log("Button works");
-    console.log("Number of guesses " + guesses);
     var guessText = inputField.value;
     if (guesses > 1) {
         if (checkInput(guessText)) {
