@@ -70,7 +70,6 @@ function verifyGuess() {
     }
     else {
         feedback.innerHTML = "Out of attempts. YOU LOSE.";
-        reset();
         guessCT.innerHTML = "Guesses left: 0";
     }
 }
